@@ -15,7 +15,7 @@ const ResidentInfo = ({ match }) => {
 
   const { residentInfo, isLoading, error } = useSelector((state) => {
     return {
-      residentInfo: state.ResidentInfoDetails.residentInfo || {},
+      residentInfo: state.ResidentInfoDetails.residentInfo || [],
       isLoading: state.ResidentInfoDetails.isLoading,
       error: state.ResidentInfoDetails.error
     }

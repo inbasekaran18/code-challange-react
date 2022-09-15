@@ -15,7 +15,7 @@ const FlimInfo = ({ match }) => {
 
   const { flimInfo, isLoading, error } = useSelector((state) => {
     return {
-      flimInfo: state.FlimInfoDetails.flimInfo || {},
+      flimInfo: state.FlimInfoDetails.flimInfo || [],
       isLoading: state.FlimInfoDetails.isLoading,
       error: state.FlimInfoDetails.error
     }
